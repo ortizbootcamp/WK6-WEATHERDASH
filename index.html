@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Weather Dash</title>
+</head>
+
+<body>
+
+<section class="container col center-align">
+<!--HEADER-->
+<section>
+
+    <header class="col card-panel s6 m10 l12">
+        <h1>Weather Dash...</h1>
+        <h4>Getting your weather to you in a flash!</h2>
+    </header>
+
+</section>
+<!--HEADER-->
+
+
+<section class="row">
+
+<!--SIDENAV&CITYSEARCH-->
+    <sidenav class="col card-panel s3 m2 l3">
+
+        <h5>Search your cities here:</h3>
+        <input type="text" class="cityform" placeholder="">
+        <button data-city class="btn">🏙️</button>
+        <ul class="storedcity"></ul>
+
+    </sidenav>
+<!--SIDENAV&CITYSEARCH-->
+
+<!--CURRENTWEATHER-->
+<content class="col card-panel s8 offset-s1 m9 offset-m1 l8 offset-l1">
+
+    <h4>Current Weather for</h4>
+    <h4 id="cname"></h4>
+<div class="card">
+    <section id="current" class="cname"></section>
+</div>
+
+</content>
+<!--CURRENTWEATHER-->
+
+<!--WEATHERFORTHEWEEK-->
+<content class="col card-panel s8 offset-s1 m9 offset-m1 l8 offset-l4">
+    <h4>Weather for the Week:</h4>
+
+<section class="weeklyw">
+    <div class="card">
+        <section id="fcard"></section>
+    </div>
+</section>
+
+<section class="weeklyw">
+    <div class="card"></div>
+        <section id="fcard"></section>
+    </div>
+</section>
+
+<section class="weeklyw">
+    <div class="card">
+        <section id="fcard"></section>
+    </div>
+</section>
+
+<section class="weeklyw">
+    <div class="card">
+        <section id="fcard"></section>
+    </div>
+</section>
+
+<section class="weeklyw">
+    <div class="card">
+        <section id="fcard"></section>
+    </div>
+</section>
+
+</content>
+<!--WEATHERFORTHEWEEK-->
+
+</section>
+
+</section>
+
+
+
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script>
+    moment().format();
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
